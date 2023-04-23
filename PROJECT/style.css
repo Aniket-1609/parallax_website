@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.background{
+    transform: translateZ(-100px) scale(15);
+    background: no-repeat;
+}
+.foreground{
+    transform: translate(-20px) scale(1);
+    
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+section{
+    background-color:rgb(45,45,45) ;
+    color:white;
+    padding:5rem 0;
+}
+.secHeading{
+    font-size: 3rem;
+    padding:0 10rem;
+}
+.text{
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 5rem 0;
+}
+.bg{
+    position:relative;
+    width: 100%;
+    background-attachment: fixed; 
+    /* image wahi rhegi aur chije scroll up kregi */
+    background-size: cover;  /*image screen m fit ho jaye properly */
+    background-position: center;
+    /* image ko screen ke center m laane k liye */
+    height:500px;
+}
+.desc{
+    position: absolute;
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    transform: translateX(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    padding: 0.5rem 2.5rem;
+    
+
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+    background-image: url(sport-3.jpg);
+}
